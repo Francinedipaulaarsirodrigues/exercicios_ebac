@@ -8,17 +8,17 @@
             Contexto:
             Dado que eu acesse a página da plataforma de autenticação cliente EBAC-SHOP
 
-            Cenário: Autenticação valida
+            Cenário: Login valida
             Quando eu digitar "francine@123.com.br"
             E a senha "senhafra123"
             Entao deve exibir uma mensagem de boas vindas "Olá Francine"
 
-            Cenário: Autenticação inexistente
+            Cenário: Login inexistente
             Quando eu digitar "rrrrrff@123.com.br"
             E a senha "senhafra123"
             Entao deve exibir uma mensagem de alerta "Usuario inesistente"
 
-            Cenário: Usuário com senha invalida
+            Cenário: Usuário com login ou senha invalidos
             Quando eu digitar "francine@123.com.br"
             E a senha "senharrrff123"
             Entao deve exibir uma mensagem de alerta "Usuario ou senha invalidos"
@@ -29,16 +29,16 @@
             Entao deve exibir a <mensagem> de sucesso
 
             Exemplos:
-            | usuario               | senha          | mensagem       |
-            | "francine@123.com.br" | "senhafran123" | "Olá Francine" |
-            | "maria@123.com.br"    | "senhamar123"  | "Olá Maria"    |
-            | "Carlos@123.com.br"   | "senhacar123"  | "Olá Carlos"   |
-            | "fernando@123.com.br" | "senhafer123"  | "Olá fernando" |
-            | "Teo@123.com.br"      | "senhateo123"  | "Olá Teo"      |
-            | "lucas@123.com.br"    | "senhaluc123"  | "Olá Lucas"    |
-            | "Monica@123.com.br"   | "senhamoc123"  | "Olá Monica"   |
-            | "Joao@123.com.br"     | "senhajoa123"  | "Olá Joao"     |
-            | "Willian@123.com.br"  | "senhawil123"  | "Olá Willian"  |
-            | "Caio@123.com.br"     | "senhacai123"  | "Olá Caio"     |
+            | usuario                     | senha          | mensagem       |
+            | "francine@123.com.br"       | "senhafran123" | "Olá Francine" |
+            | "mariasol_@2016.com.br"     | "senhamar123"  | "Olá Maria"    |
+            | "Carlos@_2023.com.br"       | "senhacar123"  | "Olá Carlos"   |
+            | "fernandobol@.com.br"       | "senhafer123"  | "Olá fernando" |
+            | "Teo.maia587@.com.br"       | "senhateo123"  | "Olá Teo"      |
+            | "lucas16@.com.br"           | "senhaluc123"  | "Olá Lucas"    |
+            | "Monica.pinto234@.com.br"   | "senhamoc123"  | "Olá Monica"   |
+            | "Joao.carlosm@.com.br"      | "senhajoa123"  | "Olá Joao"     |
+            | "Willianflahexa2009.com.br" | "senhawil123"  | "Olá Willian"  |
+            | "Caio@vicente896.com.br"    | "senhacai123"  | "Olá Caio"     |
 
 
